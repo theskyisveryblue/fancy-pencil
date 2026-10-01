@@ -1,0 +1,82 @@
+{
+  "version": "2.19",
+  "children": [
+    {
+      "type": "frame",
+      "id": "skSG2",
+      "x": 1400,
+      "y": 0,
+      "name": "Audit Nested Inner",
+      "reusable": true,
+      "width": 240,
+      "height": 64,
+      "fill": "#E2E8F0",
+      "padding": 12,
+      "children": [
+        {
+          "type": "text",
+          "id": "GigZ5",
+          "name": "Audit Nested Label",
+          "fill": "#111827",
+          "content": "Changed origin",
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gL2Ml",
+      "x": 1400,
+      "y": 120,
+      "name": "Audit Nested Outer",
+      "reusable": true,
+      "width": 320,
+      "height": 200,
+      "fill": "#FFFFFF",
+      "stroke": "#64748B",
+      "strokeWidth": 1,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 16,
+      "children": [
+        {
+          "type": "text",
+          "id": "veExn",
+          "name": "Audit Nested Title",
+          "fill": "#111827",
+          "content": "Original outer",
+          "fontFamily": "Inter",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "id": "c4zmg",
+          "type": "ref",
+          "ref": "skSG2",
+          "name": "Audit Nested Child",
+          "width": "fill_container",
+          "height": 64
+        }
+      ]
+    },
+    {
+      "id": "G3F0DE",
+      "type": "ref",
+      "ref": "gL2Ml",
+      "name": "Audit Nested Instance",
+      "x": 1760,
+      "y": 120,
+      "descendants": {
+        "veExn": {
+          "content": "Overridden outer"
+        },
+        "c4zmg/GigZ5": {
+          "content": "Overridden inner",
+          "fill": "#7C3AED"
+        }
+      }
+    }
+  ]
+}

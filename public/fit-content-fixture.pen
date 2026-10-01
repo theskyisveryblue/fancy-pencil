@@ -1,0 +1,76 @@
+{
+  "version": "2.19",
+  "children": [
+    {
+      "type": "frame",
+      "id": "fxRow",
+      "x": 40,
+      "y": 40,
+      "name": "Fit Row",
+      "width": "fit_content",
+      "height": 60,
+      "layout": "horizontal",
+      "gap": 10,
+      "padding": 8,
+      "fill": "#FFFFFF",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "fxChildA",
+          "name": "Child A",
+          "width": 100,
+          "height": 40,
+          "fill": "#93C5FD"
+        },
+        {
+          "type": "rectangle",
+          "id": "fxChildB",
+          "name": "Child B",
+          "width": 50,
+          "height": 40,
+          "fill": "#FCA5A5"
+        },
+        {
+          "type": "rectangle",
+          "id": "fxAbsolute",
+          "name": "Absolute",
+          "layoutPosition": "absolute",
+          "x": 300,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#FDE68A"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fxCol",
+      "x": 40,
+      "y": 160,
+      "name": "Fit Column",
+      "layout": "vertical",
+      "gap": 6,
+      "padding": 12,
+      "fill": "#FFFFFF",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "fxColA",
+          "name": "Col A",
+          "width": 120,
+          "height": 20,
+          "fill": "#86EFAC"
+        },
+        {
+          "type": "rectangle",
+          "id": "fxColB",
+          "name": "Col B",
+          "width": 40,
+          "height": 20,
+          "fill": "#C4B5FD"
+        }
+      ]
+    }
+  ]
+}

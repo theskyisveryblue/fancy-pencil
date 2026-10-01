@@ -1,0 +1,37 @@
+{
+  "version": "2.19",
+  "children": [
+    {
+      "type": "frame",
+      "id": "demo1",
+      "name": "Lunaris starter",
+      "x": 80,
+      "y": 80,
+      "width": 480,
+      "height": 320,
+      "fill": "#FFFFFF",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "swatch1",
+          "name": "Color swatch",
+          "x": 32,
+          "y": 32,
+          "width": 160,
+          "height": 100,
+          "fill": "#0F766E"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "name": "Title",
+          "x": 32,
+          "y": 160,
+          "width": 360,
+          "height": 48,
+          "content": "Lunaris starter"
+        }
+      ]
+    }
+  ]
+}

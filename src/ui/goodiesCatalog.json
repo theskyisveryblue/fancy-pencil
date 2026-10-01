@@ -1,0 +1,450 @@
+{
+  "Candlestick": {
+    "type": "script",
+    "name": "Candlestick",
+    "clip": true,
+    "width": 540,
+    "height": 361,
+    "scriptUri": "images/candlestick.js",
+    "inputs": {
+      "wickWidth": 2,
+      "bearColor": "#ef4444",
+      "bullColor": "#22c55e",
+      "candles": 50
+    }
+  },
+  "Chart": {
+    "type": "script",
+    "name": "Chart",
+    "clip": true,
+    "width": 660,
+    "height": 336,
+    "scriptUri": "images/chart.js"
+  },
+  "Circle Text": {
+    "type": "script",
+    "name": "Circle Text",
+    "clip": true,
+    "width": 407,
+    "height": 420,
+    "scriptUri": "images/circle-text.js",
+    "inputs": {
+      "showCircle": false,
+      "filled": false
+    }
+  },
+  "Circular Visualizer": {
+    "type": "script",
+    "name": "Circular Visualizer",
+    "clip": true,
+    "width": 407,
+    "height": 420,
+    "scriptUri": "images/circular-visualizer.js",
+    "inputs": {
+      "colorStart": "#aa00ff",
+      "colorEnd": "#a2ff00"
+    }
+  },
+  "Clock": {
+    "type": "script",
+    "name": "Clock",
+    "width": 300,
+    "height": 300,
+    "scriptUri": "images/clock.js",
+    "inputs": {
+      "Seconds": 36.4,
+      "Minutes": 29.4
+    }
+  },
+  "Digital Spectrum": {
+    "type": "script",
+    "name": "Digital Spectrum",
+    "clip": true,
+    "width": 589,
+    "height": 336,
+    "scriptUri": "images/digital-spectrum.js"
+  },
+  "Digital Time": {
+    "type": "script",
+    "name": "Digital Time",
+    "clip": true,
+    "width": 379,
+    "height": 300,
+    "scriptUri": "images/digital-time.js"
+  },
+  "Gauge": {
+    "type": "script",
+    "name": "Gauge",
+    "width": 300,
+    "height": 300,
+    "scriptUri": "images/gauge.js"
+  },
+  "Lines": {
+    "type": "script",
+    "name": "Lines",
+    "clip": true,
+    "width": 407,
+    "height": 420,
+    "scriptUri": "images/lines.js",
+    "inputs": {
+      "lines": 33
+    }
+  },
+  "Radar": {
+    "type": "script",
+    "name": "Radar",
+    "width": 300,
+    "height": 300,
+    "scriptUri": "images/radar.js"
+  },
+  "Blurry Lens": {
+    "type": "frame",
+    "name": "Blurry Lens",
+    "width": "fit_content(385)",
+    "height": "fit_content(349)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/glass.glsl",
+      "uniforms": {
+        "u_edgeWidth": 200,
+        "u_ior": 2,
+        "u_chromatic": 0.13,
+        "u_specPower": 55.61,
+        "u_specIntensity": 0.96,
+        "u_fresnelIntensity": 1.2,
+        "u_blur": 5,
+        "u_split": 1,
+        "u_splitAngle": 129.6,
+        "u_falloff": 168
+      }
+    },
+    "cornerRadius": 175,
+    "layout": "none"
+  },
+  "Dancer": {
+    "type": "frame",
+    "name": "Dancer",
+    "width": "fit_content(600)",
+    "height": "fit_content(400)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/fluted-glass.glsl",
+      "uniforms": {
+        "u_image": "https://images.unsplash.com/photo-1539470090907-7cc242c37af5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "u_ribWidth": 40,
+        "u_distortion": 0.45,
+        "u_mouseBend": 1,
+        "u_frost": 0.04,
+        "u_colorSplit": 0.05,
+        "u_edgeShade": 0.18
+      }
+    },
+    "layout": "none"
+  },
+  "Dissolve": {
+    "type": "frame",
+    "name": "Dissolve",
+    "width": "fit_content(640)",
+    "height": "fit_content(419)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/silk.glsl",
+      "uniforms": {
+        "u_color1": "#1a0533",
+        "u_color2": "#7b2ff7",
+        "u_color3": "#ff2e93",
+        "u_color4": "#ffd23f",
+        "u_patternAngle": 45,
+        "u_patternDetail": 0.5,
+        "u_patternSwirl": 2,
+        "u_patternSpeed": 0.06,
+        "u_slideSpeed": 0.03,
+        "u_slideAngle": 90,
+        "u_stripeAngle": 35,
+        "u_stripeWidth": 64,
+        "u_bend": 95,
+        "u_sharpness": 24,
+        "u_colorSplit": 0.5,
+        "u_calmAmount": 1.5,
+        "u_calmStrength": 1,
+        "u_calmSize": 1.3,
+        "u_calmSpeed": 0.3,
+        "u_grain": 0.05,
+        "u_twirlAmount": 0,
+        "u_twirlRadius": 1.2
+      }
+    },
+    "layout": "none"
+  },
+  "Glass": {
+    "type": "frame",
+    "name": "Glass",
+    "width": "fit_content(600)",
+    "height": "fit_content(450)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/glass.glsl",
+      "uniforms": {
+        "u_edgeWidth": 100,
+        "u_fresnelIntensity": 0.54,
+        "u_chromatic": 0.07,
+        "u_specPower": 27.67,
+        "u_specIntensity": 2,
+        "u_ior": 2
+      }
+    },
+    "cornerRadius": 145,
+    "layout": "none"
+  },
+  "Green Terminal": {
+    "type": "frame",
+    "name": "Green Terminal",
+    "width": "fit_content(659)",
+    "height": "fit_content(494)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/film-leak.glsl",
+      "uniforms": {
+        "u_image": "https://images.unsplash.com/photo-1706868934222-b0be7c86fb25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NDcwMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+        "u_leakIntensity": 0.4,
+        "u_leakCount": 2,
+        "u_leakColor1": "#47bad4",
+        "u_leakColor2": "#ff4f8b",
+        "u_leakWidth": 1.2,
+        "u_leakCurve": 0,
+        "u_leakAngle": 0,
+        "u_leakHeat": 0.8,
+        "u_leakRainbow": 0.4,
+        "u_seed": 3.7,
+        "u_grain": 0.2,
+        "u_dust": 0.5,
+        "u_dustSize": 4,
+        "u_scratches": 0.1
+      }
+    },
+    "layout": "none"
+  },
+  "Ink on Paper": {
+    "type": "frame",
+    "name": "Ink on Paper",
+    "width": "fit_content(659)",
+    "height": "fit_content(494)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/dither-image.glsl",
+      "uniforms": {
+        "u_image": "https://images.unsplash.com/photo-1600298882698-312a4137fd33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA2NTkxNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+        "u_style": 1,
+        "u_cellSize": 3,
+        "u_brightness": 1.5,
+        "u_contrast": 2,
+        "u_keepColor": 0,
+        "u_darkColor": "#1a1714",
+        "u_lightColor": "#efe9d8",
+        "u_shades": 2
+      }
+    },
+    "layout": "none"
+  },
+  "Margin": {
+    "type": "frame",
+    "name": "Margin",
+    "width": "fit_content(640)",
+    "height": "fit_content(419)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/silk.glsl",
+      "uniforms": {
+        "u_color1": "#f0ead8",
+        "u_color2": "#2b4eff",
+        "u_color3": "#ff48b0",
+        "u_color4": "#f0ead8",
+        "u_patternAngle": 45,
+        "u_patternDetail": 0.4,
+        "u_patternSwirl": 2.4,
+        "u_patternSpeed": 0.05,
+        "u_slideSpeed": 0.03,
+        "u_slideAngle": 90,
+        "u_stripeAngle": 45,
+        "u_stripeWidth": 70,
+        "u_bend": 0,
+        "u_sharpness": 0.5,
+        "u_colorSplit": 0.4,
+        "u_calmAmount": 0,
+        "u_calmStrength": 1,
+        "u_calmSize": 2,
+        "u_calmSpeed": 0.5,
+        "u_grain": 0.4,
+        "u_twirlAmount": 0,
+        "u_twirlRadius": 1.2
+      }
+    },
+    "layout": "none"
+  },
+  "Mono": {
+    "type": "frame",
+    "name": "Mono",
+    "width": "fit_content(659)",
+    "height": "fit_content(494)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/film-leak.glsl",
+      "uniforms": {
+        "u_image": "https://images.unsplash.com/photo-1453413453658-27fec8f43f29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NDcwMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+        "u_leakIntensity": 0.4,
+        "u_leakCount": 2,
+        "u_leakColor1": "#ff3b9e",
+        "u_leakColor2": "#ffb24a",
+        "u_leakWidth": 1,
+        "u_leakCurve": 0.5,
+        "u_leakAngle": 40,
+        "u_leakHeat": 0.8,
+        "u_leakRainbow": 0.1,
+        "u_seed": 11.2,
+        "u_grain": 0.09,
+        "u_dust": 0.55,
+        "u_dustSize": 1.6,
+        "u_scratches": 0.4
+      }
+    },
+    "layout": "none"
+  },
+  "Ripple": {
+    "type": "frame",
+    "name": "Ripple",
+    "width": "fit_content(600)",
+    "height": "fit_content(450)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/ripple.glsl",
+      "uniforms": {
+        "u_ior": 2,
+        "u_depth": 0.48,
+        "u_amplitude": 0.05,
+        "u_scale": 0.875,
+        "u_speed": 0.22,
+        "u_turbulence": 0.23,
+        "u_highlights": 0,
+        "u_dispersion": 1,
+        "u_timeOverride": 0
+      }
+    },
+    "layout": "none"
+  },
+  "Silhouette": {
+    "type": "frame",
+    "name": "Silhouette",
+    "width": "fit_content(600)",
+    "height": "fit_content(400)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/fluted-glass.glsl",
+      "uniforms": {
+        "u_image": "https://images.unsplash.com/photo-1663232176328-5430c668593e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA4NDM4MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+        "u_ribWidth": 30,
+        "u_distortion": 1,
+        "u_mouseBend": 0.68,
+        "u_frost": 0,
+        "u_colorSplit": 0.08,
+        "u_edgeShade": 0
+      }
+    },
+    "layout": "none"
+  },
+  "Static Nights": {
+    "type": "frame",
+    "name": "Static Nights",
+    "width": "fit_content(640)",
+    "height": "fit_content(392)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/dither-gradient.glsl",
+      "uniforms": {
+        "u_backgroundColor": "#050505",
+        "u_dotColor": "#d7ff3e",
+        "u_dotSize": 3,
+        "u_shapeSize": 5,
+        "u_roughness": 0.4,
+        "u_movement": 0.4,
+        "u_slideAngle": 90,
+        "u_warp": 1,
+        "u_coverage": 0.6,
+        "u_contrast": 2
+      }
+    },
+    "layout": "none"
+  },
+  "Stones": {
+    "type": "frame",
+    "name": "Stones",
+    "width": "fit_content(640)",
+    "height": "fit_content(400)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/aurora-background.glsl",
+      "uniforms": {
+        "u_speed": 0.04,
+        "u_color1": "#1C1C1A",
+        "u_color2": "#D7D3C8",
+        "u_color3": "#8A9684",
+        "u_color4": "#D9C3B0",
+        "u_gradientAngle": 135,
+        "u_turbulence": 0.3,
+        "u_detail": 0.25
+      }
+    },
+    "layout": "none"
+  },
+  "Warm Gummy": {
+    "type": "frame",
+    "name": "Warm Gummy",
+    "width": "fit_content(600)",
+    "height": "fit_content(450)",
+    "fill": {
+      "type": "shader",
+      "enabled": true,
+      "url": "images/gummy.glsl",
+      "uniforms": {
+        "u_topColor": "#ffabab",
+        "u_bottomColor": "#ff0000",
+        "u_gradLow": 0.29,
+        "u_gradHigh": 0.63,
+        "u_gradBias": 4,
+        "u_thick": 0.034,
+        "u_round": 0.0724,
+        "u_bead": 0.088,
+        "u_beadGap": 0.27,
+        "u_beadBlend": 0.01,
+        "u_density": 5.04,
+        "u_albedo": 1,
+        "u_sss": 3.1,
+        "u_milk": 1.5,
+        "u_milkScale": 7.285,
+        "u_lightAngle": 180,
+        "u_lightElev": 0,
+        "u_spec": 1.17,
+        "u_gloss": 400,
+        "u_fres": 0.88,
+        "u_fresPow": 2.19,
+        "u_envBands": 0.48,
+        "u_envBandGain": 1.5,
+        "u_envBandSharp": 12,
+        "u_envPhase": 3.204432,
+        "u_disp": 0
+      }
+    },
+    "layout": "none"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "version": "2.19",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "JLb0R",
+          "x": 32,
+          "y": 32,
+          "name": "Pen Audit Primitives",
+          "width": 640,
+          "height": 480,
+          "fill": "$audit-surface",
+          "cornerRadius": 17,
+          "layout": "vertical",
+          "gap": "$audit-spacing",
+          "padding": 24,
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 12,
+              "id": "LvT0V",
+              "name": "Audit Rectangle",
+              "fill": "$audit-accent",
+              "width": "fill_container",
+              "height": 80
+            },
+            {
+              "type": "ellipse",
+              "id": "dhQ18",
+              "name": "Audit Ellipse",
+              "fill": "#F97316",
+              "width": "fill_container",
+              "height": 80
+            },
+            {
+              "type": "text",
+              "id": "yqxAb",
+              "name": "Audit Text",
+              "fill": "#111827",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Pen workflow audit",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Iy7jv",
+              "name": "Audit Component",
+              "reusable": true,
+              "width": 200,
+              "height": 48,
+              "fill": "#16A34A",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yyyuL",
+                  "name": "Audit Component Label",
+                  "fill": "#FFFFFF",
+                  "content": "Original",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "id": "x7eMPw",
+              "type": "ref",
+              "ref": "Iy7jv",
+              "name": "Audit Instance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ptlRG",
+      "x": 840,
+      "y": 0,
+      "name": "article",
+      "context": "article",
+      "clip": true,
+      "width": 420,
+      "height": 300,
+      "fill": "#ffffff",
+      "cornerRadius": 16,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 25,
+      "children": [
+        {
+          "type": "text",
+          "id": "ZOTeJ",
+          "name": "Browser import audit",
+          "context": "h1",
+          "fill": "#0f172a",
+          "content": "Browser import audit",
+          "lineHeight": 1.13,
+          "fontFamily": "Arial",
+          "fontSize": 24,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "SzIDA",
+          "name": "Computed style round trip.",
+          "context": "p",
+          "fill": "#475569",
+          "content": "Computed style round trip.",
+          "lineHeight": 1.06,
+          "fontFamily": "Arial",
+          "fontSize": 16,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "eT20o",
+          "name": "img",
+          "context": "img",
+          "clip": true,
+          "width": 48,
+          "height": 48,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 8,
+              "id": "jdkWq",
+              "x": 0,
+              "y": 0,
+              "fill": "#f97316",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "type": "ellipse",
+              "id": "B9eSSG",
+              "x": 12,
+              "y": 12,
+              "fill": "#fff",
+              "width": 24,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V3EdoD",
+          "name": "Inspect styles",
+          "context": "button",
+          "width": "fill_container",
+          "height": 40,
+          "fill": "#2563eb",
+          "cornerRadius": 8,
+          "layout": "vertical",
+          "padding": [
+            1,
+            6
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "z1obpV",
+              "fill": "#ffffff",
+              "content": "Inspect styles",
+              "lineHeight": 1.06,
+              "textAlign": "center",
+              "fontFamily": "Arial",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark"
+    ]
+  },
+  "variables": {
+    "audit-accent": {
+      "type": "color",
+      "value": "#7C3AED"
+    },
+    "audit-spacing": {
+      "type": "number",
+      "value": 20
+    },
+    "audit-surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F8FAFC",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#0F172A",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    }
+  }
+}
