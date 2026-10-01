@@ -1,6 +1,7 @@
 node_modules/
 dist/
 browser-results/
+.fancy-pencil-verified
 *.log
 .DS_Store
 .env
